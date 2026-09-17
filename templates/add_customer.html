@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content%}
+<br><br>
+<h1 class="text-capitalize text-center mx-10 bg-dark text-white">Register a new customer</h1>
+<form method="post">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input name="name" type="text" class="form-control" id="name" placeholder="customer first and last name">
+        </div>
+        <div class="form-group col-md-4">
+        <label for="email">Email</label>
+        <input name="email" type="email" class="form-control" id="email" placeholder="customer email">
+    </div>
+    <div class="form-group col-md-4">
+        <label for="phone">email</label>
+        <input name="phone" type="email" class="form-control" id="phone" placeholder="customer phone">
+    </div>
+    </div>
+</form>
+
+{% endblock content%}
