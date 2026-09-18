@@ -24,3 +24,9 @@ class HomeView(View):
         }
 
         return render(request, self.template_name, context)
+class AddCustomerView(View):
+    template_name='add_customer.html'
+    def get(self, request, *args,**kwargs):
+        return render(request, self.template_name)
+    def post(self, request, *args,**kwargs):
+            return render(request, self.template_name)

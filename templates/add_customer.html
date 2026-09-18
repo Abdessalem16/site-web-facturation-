@@ -18,6 +18,44 @@
         <input name="phone" type="email" class="form-control" id="phone" placeholder="customer phone">
     </div>
     </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="sex">sex</label>
+            <select name="sex" id="sex">
+                <option> choose the gender ..</option>
+                <option value="M">Male</option>
+                <option value="F">Feminine</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="sex">Age</label>
+            <select name="age" id="age">
+                <option> choose the age range ..</option>
+                <option value="0-15">0-15</option>
+                <option value="0-15">15-25</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <div class="form-goup">
+                <label for="addres">Address</label>
+                <input type="text" required class="form-control" id="address" placeholder="Customer address">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+        <label for="city">city</label>
+        <input name="city" type="text" class="form-control" id="email" placeholder="customer city">
+    </div>
+     <div class="form-group col-md-6">
+        <label for="zip">zip code </label>
+        <input name="zip" type="text"  required class="form-control" id="email" placeholder="customer zip code">
+    </div>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary"> Save </button>
 </form>
 
 {% endblock content%}
