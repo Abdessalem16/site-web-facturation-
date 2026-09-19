@@ -37,7 +37,7 @@
           More option
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Add customer</a>
+          <a class="dropdown-item" href="{% url 'add-customer' %}">Add customer</a>
           <a class="dropdown-item" href="#">Add admin</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">statstic</a>
@@ -47,6 +47,21 @@
   </div>
 </nav>
 </header>
+<div class="container">
+  <div class="wrapper">
+    <br>
+    {% for message in messages %}
+    <div class="alert {{message.tags}} alert.dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      {{ message|safe }}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
 <div class="container">
 {% block content %}
 
